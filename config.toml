@@ -1,0 +1,10 @@
+parent_directory = "test_setup"
+buckets = ["test_bucket_1", "test_bucket_2"]
+
+serve_as_webp = true
+allow_resizing = true
+
+allow_admin = true
+
+db_name = "magnesium_db"
+collection_name = "keys"
