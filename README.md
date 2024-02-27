@@ -27,6 +27,8 @@ It was built in Rust using [Actix-Web](https://actix.rs/) & [MongoDB](https://ww
 | db_name          | "magnesium_db"                     | This is the name of the MongoDB database that will be created/written to upon launch.                                                      |
 | collection_name  | "keys"                             | This is the name of the MongoDB collection where the API keys will be stored.                                                              |
 
+*(Keep in mind that the "test_setup" directory and its content are only there to give you an example of how the working Magnesium instance could look.)*
+
 - Fill out all environment variables that are listed in the '.env.example' file.
 - You can either add them directly into the environment or just remove the .example ending from the file.
 - Run the `cargo build` command in the terminal. *(Go to the directory first.)*
@@ -40,6 +42,16 @@ Admin (disableable):
 
 - `/keys/add` - The route to add an API key. (`ADMIN_KEY` header needed.)
 - `/keys/remove` - The route to add an API key. (`ADMIN_KEY` header needed.)
+
+Testing:
+
+*If you have kept the test settings of `parent_directory` and `buckets` and you have kept the test_setup directory and its content you can test out Magnesium by going to the following routes:*
+
+- `/test_bucket_1/test1` - The test image is served as a webp file.
+- `/test_bucket_1/test1.png` - The test image is served as a png file.
+- `/upload/test_bucket_1` - Upload an image and play around with Magnesium for yourself. (`API_KEY` header needed.)
+
+*(Alternatively use `test_bucket_2` for a different bucket.*
 
 ## Resizing
 If resizing is allowed you can optionally add a `width` and `height` header to the HTTP request to resize the image.
