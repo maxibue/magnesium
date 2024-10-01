@@ -57,6 +57,3 @@ If resizing is allowed you can optionally add a `width` and `height` header to t
 
 ## Contributing
 Feel free to create issues or pull requests if you want.
-
-## License
-Magnesium is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
