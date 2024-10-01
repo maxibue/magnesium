@@ -1,5 +1,4 @@
 # Magnesium
-![mg](https://live.staticflickr.com/4634/38024207225_4667c270e4_n.jpg)
 
 Magnesium is a pluggable image processing and hosting microservice with many quality-of-life features.
 
@@ -55,26 +54,6 @@ Testing:
 
 ## Resizing
 If resizing is allowed you can optionally add a `width` and `height` header to the HTTP request to resize the image.
-
-## Performance/How I used it
-I have used Magnesium two times in larger projects. To see if it fits your needs I will explain how I used it and how it performed.
-#### Where I used it:
-I used it once for a Discord game bot where it served at most roughly 1000 images per second and it received about 70 images per second.
-
-And it was used for approximately one month by a listing website that I freelanced for. (It was used as a quick solution before setting up the CDN.)
-It served about 10.000-20.000 images per second with a rate of 30-40 images being uploaded every second.
-
-So it is relatively field-tested for small and medium & larger projects.
-
-#### How I implemented it:
-The Discord bot was written in JavaScript and it would create battle pictures of the users internally and then send an HTTP request to my Magnesium instance and it would serve the response links in embeds.
-
-I can not say too much about the listing site but it was structured like this: User uploads image -> Stored & waiting for approval -> (If approved) -> Send to Magnesium -> Attach response link to user in the database -> Serve on site.
-
-#### Testing:
-My testing showed it could theoretically **serve an estimated 50.000+ images per second** and handle image **uploads of up to 1.000 images per second**.
-
-This should be enough for most projects/websites out there.
 
 ## Contributing
 Feel free to create issues or pull requests if you want.
