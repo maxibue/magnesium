@@ -78,6 +78,3 @@ This should be enough for most projects/websites out there.
 
 ## Contributing
 Feel free to create issues or pull requests if you want.
-
-## License
-Magnesium is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
